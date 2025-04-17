@@ -11,7 +11,6 @@ const NavBar = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Programs', path: '/programs' },
     { name: 'Events', path: '/events' },
-    { name: 'Get Involved', path: '/get-involved' },
   ];
 
   return (
@@ -24,7 +23,7 @@ const NavBar = () => {
         </Link>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-8">
+        <ul className="hidden md:flex space-x-8 items-center">
           {navLinks.map(link => (
             <li key={link.name}>
               <Link 
@@ -35,8 +34,15 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-        </ul>
 
+          <Link 
+            to="https://hcb.hackclub.com/donations/start/paws-reps"
+            className="bg-emerald-600 text-white font-semibold px-4 py-2 rounded hover:bg-emerald-700 transition"
+          >
+            Donate
+          </Link>
+        </ul>
+        
         {/* Mobile menu button */}
         <button 
           className="md:hidden text-gray-700" 
@@ -60,6 +66,15 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          <li className="py-2">
+            <Link 
+              to="https://hcb.hackclub.com/donations/start/paws-reps"
+              className="block text-gray-700 hover:text-emerald-600 font-medium"
+              onClick={() => setMobileOpen(false)}
+            >
+              Donate
+            </Link>
+          </li>
         </ul>
       )}
     </div>
