@@ -51,7 +51,7 @@ const GetInvolvedPage = () => {
             At Paws & Reps, we believe awareness starts with movement — and together, we can make a real impact for rescue dogs in need.
             Whether you're a gym owner, a fitness influencer, or a passionate dog parent, there's a way for you to get involved.
           </p>
-          
+
           <h3 className="text-3xl font-bold mb-10">Who Are You?</h3>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <a href="#gym" className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl">
@@ -144,21 +144,29 @@ const GetInvolvedPage = () => {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-black mb-12">Impact in <span className="text-emerald-500">Action</span></h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl shadow-lg p-8">
               <div className="text-5xl mb-4">🏋️</div>
-              <p className="text-4xl font-black text-emerald-500">20</p>
+              <p className="text-4xl font-black text-emerald-500">2</p>
               <p className="text-gray-600">Partner Gyms</p>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-8">
-              <div className="text-5xl mb-4">🐾</div>
-              <p className="text-4xl font-black text-emerald-500">120</p>
-              <p className="text-gray-600">Pets Adopted</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-lg p-8">
               <div className="text-5xl mb-4">💰</div>
-              <p className="text-4xl font-black text-emerald-500">$50k</p>
+              <p className="text-4xl font-black text-emerald-500">$8,546</p>
               <p className="text-gray-600">Funds Raised</p>
+            </div>
+          </div>
+
+          {/* Partner Gyms */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold mb-8">Our Partner Gyms Include:</h3>
+            <div className="flex flex-wrap justify-center gap-8">
+              <div className="bg-gray-100 rounded-lg px-8 py-4">
+                <p className="text-lg font-bold">Gold's Gym Bridgewater</p>
+              </div>
+              <div className="bg-gray-100 rounded-lg px-8 py-4">
+                <p className="text-lg font-bold">Retro Fitness Bridgewater</p>
+              </div>
             </div>
           </div>
         </div>

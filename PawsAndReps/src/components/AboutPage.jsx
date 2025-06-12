@@ -1,20 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getEvents } from "../assets/getInfo";
 
 const AboutSection = () => {
-  const teamMembers = [
-    {
-      name: "Sreyash Sinha",
-      role: "Founder & President",
-      about: "Hi my name is Sreyash Sinha and I am a junior at Bridgewater Raritan High School in New Jersey. Outside of school, I love playing basketball, pickleball, and playing outside with my dog.",
-      image: "xyz"
-    },
-    {
-      name: "Neel Wakde",
-      role: "Vice President",
-      about: "My name is Neel Wakde and I am a junior at Bridgewater-Raritan High School in New Jersey. I enjoy weightlifting as well as doing mixed-martial arts. I also have 2 dogs that I frequently participate in activities with.",
-      image: "xyz"
-    },
-  ];
+  const [teamMembers, setTeamMembers] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getEvents("Team");
+      setTeamMembers(data);
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="bg-white">
