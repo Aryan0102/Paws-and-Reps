@@ -111,8 +111,6 @@ const GetInvolvedPage = () => {
           <div className="md:w-1/2 grid grid-cols-2 gap-4">
             <img src="https://4.bp.blogspot.com/-cuApDoBt96o/XJ2jZHVhN_I/AAAAAAAACm0/6qEEJKTd68ownXXJly6l79YsW1pxjcbHACLcBGAs/s1600/Instagram%2BTemplate.png" alt="Social post" className="rounded-lg shadow" />
             <img src="https://4.bp.blogspot.com/-cuApDoBt96o/XJ2jZHVhN_I/AAAAAAAACm0/6qEEJKTd68ownXXJly6l79YsW1pxjcbHACLcBGAs/s1600/Instagram%2BTemplate.png" alt="Social post" className="rounded-lg shadow" />
-            <img src="https://4.bp.blogspot.com/-cuApDoBt96o/XJ2jZHVhN_I/AAAAAAAACm0/6qEEJKTd68ownXXJly6l79YsW1pxjcbHACLcBGAs/s1600/Instagram%2BTemplate.png" alt="Social post" className="rounded-lg shadow" />
-            <img src="https://4.bp.blogspot.com/-cuApDoBt96o/XJ2jZHVhN_I/AAAAAAAACm0/6qEEJKTd68ownXXJly6l79YsW1pxjcbHACLcBGAs/s1600/Instagram%2BTemplate.png" alt="Social post" className="rounded-lg shadow" />
           </div>
         </div>
       </section>
